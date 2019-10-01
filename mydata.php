@@ -1,5 +1,6 @@
 <html>
-<body>Welcome <?php echo $_POST["nome"]; ?><br>
+<body>
+Welcome <?php echo $_POST["nome"]; ?><br>
 Your email address is: <?php echo $_POST["email"]; ?><br>
 Endereço: <?php echo $_POST["endereco"]; ?><br>
 Telefone: <?php echo $_POST["telefone"]; ?><br>
