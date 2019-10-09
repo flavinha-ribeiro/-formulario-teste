@@ -41,8 +41,15 @@
      </p>
 
    </fieldset>
+    <p>
+       <textarea cols='45' rows='7' name='comment' required></textarea>
+    <p/>
 
-   <p>
+     <p>
+     <input type="text" placeholder="Buscar..." required>
+     <p/>
+
+          <p>
      <input type="submit" value="Enviar Formulário">
    </p>
 
