@@ -20,8 +20,8 @@ describe('Testar formulario de cadastro de usuário', function() {
 
   it('testar preenchimento dos campos do formulario e fazer o submit', function() {
 
-  cy.get('input[type=submit]')
-
+  cy.get('form').submit()   // Submit a form
+  m
   })
 
   it('teste dos campos obrigatórios', function() {
