@@ -9,6 +9,6 @@ Your email address is: <?php echo $_POST["email"]; ?><br>
 Age: <?php echo $_POST["Age"]; ?><br>
 Date of birth: <?php echo $_POST["Date of birth"]; ?><br>
 telephone: <?php echo $_POST["telephone"]; ?><br>
-Comment: <?php echo $_POST["comment"]; ?><br>
+comments: <?php echo $_POST["comments"]; ?><br>
 </body>
 </html>

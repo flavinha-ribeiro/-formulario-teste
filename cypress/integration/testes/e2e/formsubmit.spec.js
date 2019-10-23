@@ -27,8 +27,12 @@ describe('Testar formulario de cadastro de usuário', function() {
     cy.get('input[name="email"]').type('flavialj@hotmail.com')
     cy.get('input[name="Age"]').type('25')
     cy.get('input[name="telephone"]').type('33369545')
-    cy.get('imput[name="comment"]').type('Felicidade')
+    cy.get('input[name="comments"]').type('Felicidade')
     cy.get('input[type="Submit"]').click()
+  })
+
+  it('conferindo informações', function() {
+
     cy.contains('name:flavia')
     cy.contains('Address:rua vicentina maria freitas 112')
     cy.contains('Neighborhood:Vila Santa Rita')
@@ -37,7 +41,6 @@ describe('Testar formulario de cadastro de usuário', function() {
     cy.contains('email:flavialj@hotmail.com')
     cy.contains('Age:25')
     cy.contains('telephone:33369545')
-
     cy.contains('Submit Form')
 
   })
@@ -53,4 +56,5 @@ describe('Testar formulario de cadastro de usuário', function() {
     cy.contains('Age:25').should('not exist')
     cy.contains('telephone:33369545').should('not exist')
     cy.contains('Submit Form').should('not exist')
+})
 })

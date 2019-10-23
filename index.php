@@ -47,13 +47,13 @@
         <input name="telephone" id="telephone" type="text" />
     </p>
 
-   </fieldset>
     <p>
-        <textarea cols="45" rows="7" name="comment"required></textarea>
+      <label for="comments">comments:</label>
+       <textarea cols="45" id="comments" rows="7" name="comments" required></textarea>
     <p/>
 
     <p>
         <input type="Submit" value="Submit Form"/>
    </p>
-
+ </fieldset>
 </form>
