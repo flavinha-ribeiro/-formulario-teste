@@ -9,7 +9,7 @@
 
        <legend>Informations</legend>
     <p>
-        <label for="name">name: <em class="required">(Required)</em></label>
+        <label for="name">name: <em class="required"></em></label>
         <input name="name" id="name" type="text" />
     </p>
 
@@ -17,6 +17,9 @@
          <label for="Address">Address:</label>
          <input name="Address" id="Address" type="text" />
     </p>
+ <p>
+   <label for="Neighborhood">Neighborhood:</label>
+   <input name="Neighborhood" id="Neighborhood" type="text" />
 
     <p>
          <label for="City">City:</label>
@@ -29,7 +32,7 @@
     </p>
 
      <p>
-         <label for="email">Email Address:</label>
+         <label for="email">email Address:</label>
          <input name="email" id="email" type="text" />
      </p>
 
@@ -38,9 +41,6 @@
        <input name="Age" id="Age" type="text" />
      </p>
 
-     <p>
-        Date of birth: <input type="date" name="birth">
-    </p>
 
      <p>
         <label for="telephone">telephone:</label>
@@ -49,11 +49,11 @@
 
    </fieldset>
     <p>
-        <textarea cols='45' rows='7' name='comment' required></textarea>
+        <textarea cols="45" rows="7" name="comment"required></textarea>
     <p/>
 
     <p>
-        <input type="submit" value="Submit Form"/>
+        <input type="Submit" value="Submit Form"/>
    </p>
 
 </form>

@@ -1,0 +1,4 @@
+describe('Testar formulario de cadastro de usuário', function() {
+  it('Checar se a pagina existe', function() {
+    cy.visit('http://localhost:8000')
+  })
