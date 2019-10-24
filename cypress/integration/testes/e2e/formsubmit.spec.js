@@ -27,34 +27,19 @@ describe('Testar formulario de cadastro de usuário', function() {
     cy.get('input[name="email"]').type('flavialj@hotmail.com')
     cy.get('input[name="Age"]').type('25')
     cy.get('input[name="telephone"]').type('33369545')
-    cy.get('input[name="comments"]').type('Felicidade')
+    cy.get('#comments').type('Felicidade')
     cy.get('input[type="Submit"]').click()
   })
 
   it('conferindo informações', function() {
 
-    cy.contains('name:flavia')
-    cy.contains('Address:rua vicentina maria freitas 112')
-    cy.contains('Neighborhood:Vila Santa Rita')
-    cy.contains('City:Belo horizonte')
-    cy.contains('Country:Brasil')
-    cy.contains('email:flavialj@hotmail.com')
-    cy.contains('Age:25')
-    cy.contains('telephone:33369545')
-    cy.contains('Submit Form')
-
+    cy.contains('flavia')
+    cy.contains('rua vicentina maria freitas 112')
+    cy.contains('Belo Horizonte')
+    cy.contains('Brasil')
+    cy.contains('flavialj@hotmail.com')
+    cy.contains('25')
+    cy.contains('33369545')
+    cy.contains('Felicidade')
   })
-
-  it('teste dos campos obrigatórios', function() {
-
-    cy.contains('name:flavia').should('not exist')
-    cy.contains('Address:rua vicentina maria freitas 112').should('not exist')
-    cy.contains('Neighborhood:Vila Santa Rita').should('not exist')
-    cy.contains('City:Belo horizonte').should('not exist')
-    cy.contains('Country:Brasil').should('not exist')
-    cy.contains('email:flavialj@hotmail.com').should('not exist')
-    cy.contains('Age:25').should('not exist')
-    cy.contains('telephone:33369545').should('not exist')
-    cy.contains('Submit Form').should('not exist')
-})
 })

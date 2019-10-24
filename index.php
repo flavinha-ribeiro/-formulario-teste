@@ -9,7 +9,7 @@
 
        <legend>Informations</legend>
     <p>
-        <label for="name">name: <em class="required"></em></label>
+        <label for="name">name:<em required></em></label>
         <input name="name" id="name" type="text" />
     </p>
 
