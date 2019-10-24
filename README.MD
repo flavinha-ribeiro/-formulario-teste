@@ -1,3 +1,5 @@
+Este projetos foi baseado nos seguintes sites de estudos:
+
 https://celke.com.br/artigo/tabela-de-cores-html-nome-hexadecimal-rgb
 http://excript.com/php/formulario-html-php.html
 https://pt.stackoverflow.com/questions/159497/como-tornar-obrigat%C3%B3rio-um-campo-html
