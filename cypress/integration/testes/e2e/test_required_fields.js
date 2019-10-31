@@ -14,6 +14,6 @@ describe('Testar formulario de cadastro de usuário', function() {
     cy.get('input[name="telephone"]').type('33369545')
     cy.get('#comments')
     cy.get('input[type="Submit"]').click()
-
+    cy.get('input[name="telephone"]').type('33369545')
   })
 })
