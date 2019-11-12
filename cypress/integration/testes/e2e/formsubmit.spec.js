@@ -1,10 +1,10 @@
 
-describe('Testar formulario de cadastro de usuário', function() {
-  it('Checar se a pagina existe', function() {
+describe('Test User Registration Form', function() {
+  it('Check if page exists', function() {
     cy.visit('http://localhost:8000')
   })
 
-  it('checar se os campos existem no formulario', function() {
+  it('check if the fields exist in the form', function() {
 
        cy.contains('name')
        cy.contains('Address')
@@ -17,7 +17,7 @@ describe('Testar formulario de cadastro de usuário', function() {
        cy.get('input[type="Submit"]')
   })
 
-  it('testar preenchimento dos campos do formulario e fazer o submit', function() {
+  it('test form field completion and submit', function() {
     //
     cy.get('input[name="name"]').type('flavia')
     cy.get('input[name="Address"]').type('rua vicentina maria freitas 112 ')
@@ -31,7 +31,7 @@ describe('Testar formulario de cadastro de usuário', function() {
     cy.get('input[type="Submit"]').click()
   })
 
-  it('conferindo informações', function() {
+  it('checking information', function() {
 
     cy.contains('flavia')
     cy.contains('rua vicentina maria freitas 112')

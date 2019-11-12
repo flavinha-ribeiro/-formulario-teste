@@ -3,7 +3,7 @@ describe('Testar formulario de cadastro de usuário', function() {
     cy.visit('http://localhost:8000')
   })
 
-  it('testando campos required', function() {
+  it('testing fields required', function() {
     cy.get('input[name="name"]')
     cy.get('input[name="Address"]').type('rua vicentina maria freitas 112 ')
     cy.get('input[name="Neighborhood"]').type('Vila Santa Rita')
@@ -15,7 +15,7 @@ describe('Testar formulario de cadastro de usuário', function() {
     cy.get('#comments')
     cy.get('input[type="Submit"]').click()
   })
-  it('testando se continua na mesma pagina', function() {
+  it('testing if its on the same page', function() {
     cy.contains('Informations')
     cy.contains('name')
     cy.contains('Address')
