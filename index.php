@@ -9,12 +9,12 @@
    <fieldset>
        <legend>Informations</legend>
     <p>
-        <label for="name">name:<em required></em></label>
-        <input name="name" id="name" type="text" />
+        <label for="name">name:</label>
+        <input name="name" id="name" type="text" required />
     </p>
     <p>
          <label for="Address">Address:</label>
-         <input name="Address" id="Address" type="text" />
+         <input name="Address" id="Address" type="text" required />
     </p>
  <p>
    <label for="Neighborhood">Neighborhood:</label>
@@ -25,7 +25,7 @@
     </p>
      <p>
          <label for="Country">Country:</label>
-         <input name="Country" id="Country" type="text" />
+         <input name="Country" id="Country" type="text" required />
     </p>
      <p>
          <label for="email">email Address:</label>
@@ -41,7 +41,7 @@
     </p>
     <p>
       <label for="comments">comments:</label>
-       <textarea cols="45" id="comments" rows="7" name="comments" required></textarea>
+       <textarea cols="45" id="comments" rows="7" name="comments" ></textarea>
     <p/>
     <p>
         <input type="Submit" value="Submit Form"/>
